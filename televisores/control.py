@@ -21,3 +21,7 @@ class Control:
         self._tv=tv
     def getTv(self):
         return self._tv
+    def setCanal(self):
+        self._tv.setCanal()
+    def setVolumen(self):
+        self._tv.setVolumen
