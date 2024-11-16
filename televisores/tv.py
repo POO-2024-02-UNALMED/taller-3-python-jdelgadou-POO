@@ -1,3 +1,4 @@
+from __future__ import annotations
 class TV:
     _numTV=0
     def __init__(self,Marca,estado):
@@ -18,7 +19,8 @@ class TV:
         return self._volumen
     def getControl(self):
         return self._control
-    def getNumTV(self):
+    @classmethod
+    def getNumTV(cls):
         return TV.numTV
     def getEstado(self):
         return self._estado
@@ -34,7 +36,8 @@ class TV:
             self._volumen=volumen
     def setControl(self,Control):
         self._control=Control
-    def setNumTV(self, numero):
+    @classmethod
+    def setNumTV(cls, numero):
         TV.numTV=numero
     def turnOn(self):
         self._estado=True
