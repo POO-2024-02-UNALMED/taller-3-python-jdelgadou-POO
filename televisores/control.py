@@ -2,9 +2,9 @@ from __future__ import annotations
 class Control:
     def __init__(self):
         self._tv=None
-    def enlazar(self,  TV):
-        self._tv=TV
-        TV.setControl(self)
+    def enlazar(self,  tv= TV):
+        self._tv=tv
+        tv.setControl(self)
     def turnOn(self):
         self._tv.turnOn()
     def turnOff(self):
@@ -18,6 +18,6 @@ class Control:
     def volumenDown(self):
         self._tv.volumenDown()
     def setTv(self, tv: TV):
-        self._tv=TV
+        self._tv=tv
     def getTv(self):
         return self._tv

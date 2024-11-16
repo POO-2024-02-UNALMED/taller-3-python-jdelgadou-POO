@@ -34,8 +34,8 @@ class TV:
     def setVolumen(self,volumen):
         if self._estado==True and 0<=volumen<=7:
             self._volumen=volumen
-    def setControl(self,Control):
-        self._control=Control
+    def setControl(self,control: Control):
+        self._control=control
     @classmethod
     def setNumTV(cls, numero):
         cls._numTV=numero
