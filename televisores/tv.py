@@ -21,7 +21,7 @@ class TV:
         return self._control
     @classmethod
     def getNumTV(cls):
-        return TV.numTV
+        return cls._numTV
     def getEstado(self):
         return self._estado
     def setMarca(self,Marca):
@@ -38,7 +38,7 @@ class TV:
         self._control=Control
     @classmethod
     def setNumTV(cls, numero):
-        TV.numTV=numero
+        cls._numTV=numero
     def turnOn(self):
         self._estado=True
     def turnOff(self):

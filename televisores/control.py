@@ -12,12 +12,12 @@ class Control:
     def canalUp(self):
         self._tv.canalUp()
     def canalDown(self):
-        self._tv.CanalDown()
+        self._tv.canalDown()
     def volumenUp(self):
         self._tv.volumenUp()
     def volumenDown(self):
         self._tv.volumenDown()
-    def setTv(self, TV):
+    def setTv(self, tv: TV):
         self._tv=TV
     def getTv(self):
         return self._tv
