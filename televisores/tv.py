@@ -1,4 +1,3 @@
-from __future__ import annotations
 class TV:
     _numTV=0
     def __init__(self,Marca,estado):
